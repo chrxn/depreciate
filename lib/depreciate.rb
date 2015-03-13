@@ -1,5 +1,4 @@
 require "depreciate/version"
-
 module Depreciate
   class Depreciate
     attr_accessor :unit, :cost, :acquisition_date, :lifetime, :residual_value
@@ -10,19 +9,6 @@ module Depreciate
       @lifetime = lifetime
       @unit = unit
     end
-  
-    def depreciation_per_unit(unit = :year)
-      case unit
-      when :second 
-      when :minute
-      when :hour
-      when :day
-      when :week
-      when :month
-      when :year
-      end
-    end
-
 
     def value_lost_per_second
        return (@cost - @residual_value) / @lifetime
@@ -37,5 +23,4 @@ module Depreciate
     end
 
   end
-
 end

@@ -6,7 +6,7 @@ require 'depreciate/version'
 Gem::Specification.new do |spec|
   spec.name          = "depreciate"
   spec.version       = Depreciate::VERSION
-  spec.authors       = ["Christian Stark"]
+  spec.authors       = ["chrxn"]
   spec.email         = ["chrxin@gmail.com"]
 
   if spec.respond_to?(:metadata)
